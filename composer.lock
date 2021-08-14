@@ -6,7 +6,7 @@
     ],
     "content-hash": "90bbf95869b4e88bf0dc5022e708a458",
     "packages": [
-        {
+        { 
             "name": "phpmailer/phpmailer",
             "version": "v6.5.0",
             "source": {
