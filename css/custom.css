@@ -1,0 +1,190 @@
+*{padding:0;
+ margin:0;
+}
+body {
+	font-family:Montserrat,Arial,sans-serif;
+   /* font-family:SourceSans,Geneva,Helvetica,Arial,sans-serif;*/
+	font-size:15px;
+    overflow-x: hidden;
+}
+.header-main{
+    background-color: #0c2244;
+    padding: 20px;
+    border-bottom:2px solid #696969;
+}
+.logo-center{
+    width: 17%;
+}
+.logo-right{
+    width: 25%;
+    float:right;
+}
+.heading-1{
+font-size: 15px;
+line-height: 20px;
+margin-bottom: 0;
+margin-left: 0;
+}
+.fa{
+    font-size: 22px;
+}
+.media-middle {
+    vertical-align: top !important;
+}
+.banner-login{
+    background-image: url( ../images/ib-login-banner-1797x800.jpg);
+    background-position: center;
+    padding-top:150px;
+    padding-bottom:40px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 904px;
+}
+.bg-1{
+    padding: 15px 32px 40px 32px;
+    background-color: #fff;
+    border-radius: 40px 0px 40px 0px;
+    border: 15px solid #d71e36;
+}
+.bg-1 h1{
+    font-family: Montserrat,Arial,sans-serif;
+    font-size: 40px;
+    font-weight: 800;
+    text-transform:uppercase;
+    padding-bottom: 17px;
+    color: #0c2244;
+
+}
+label {
+    font-family: Montserrat,Arial,sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+.form-group input {
+    display: block;
+    width: 100%;
+    border-radius: 4px;
+    border: 1px solid #d51e38;
+    background: white;
+    color: #000;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    height: 48px;
+    padding: 12px 16px;
+    box-sizing: border-box;
+    transition: border-color 200ms ease-in 0s, box-shadow 200ms ease-in 0s, width 200ms ease-in-out 0s;
+    
+}
+.form-group input:focus {
+    outline: solid transparent;
+    border-color: #d40134;
+    box-shadow: #d40134 0px 0px 0px 3px;
+}
+.btn1:hover, .btn1:focus {
+    background-color: #be012f;
+    color: white;
+    outline-color: transparent;
+    outline-style: solid;
+}
+.btn1 {
+    background-color: #d40134;
+    border-radius: 4px;
+    border: 2px solid transparent;
+    padding: 0.5rem 1.5rem;
+    color: white;
+    font-family: Montserrat,Arial,sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    box-shadow: none;
+    display: inline-block;
+    -webkit-appearance: none;
+    box-sizing: border-box;
+    padding: 10px 19px;
+    min-height: 41px;
+    min-width: 128px;
+    text-align: center;
+    transition: border-color 200ms ease-in 0s, box-shadow 200ms ease-in 0s, background-color 200ms ease-in 0s, color 200ms ease-in 0s;
+    white-space: nowrap;
+    outline: none;
+    margin-top: 10px;
+}
+.btn-default:hover {
+    background-color: #be012f;
+    color: white;
+    outline-color: transparent;
+    outline-style: solid;
+    border-color: #be012f;
+}
+
+.btn1:focus {
+    box-shadow: rgba(194, 0, 0, 0.65) 0px 0px 0px 3px;
+}
+.btn1 a {
+    color: #fff;
+    text-decoration: none !important;
+}
+.footer{
+    background-color: #0c2244;
+    padding: 20px;
+    border-top:2px solid #696969;
+}
+.foo-text{
+    font-size: 15px;
+    color: #fff;
+    text-align: left;
+    margin-top:40px;
+}
+
+
+
+
+
+
+ @media (max-width: 640px) {
+.logo-center {
+    width: 60%;
+}
+.banner-login {
+    padding-top: 26px;
+    padding-bottom: 0px;
+    height: 640px;
+}
+.logo-right {
+    width: 60%;
+    float: none;
+    margin: auto;
+}
+.foo-text {
+    text-align: center;
+}
+.bg-1 h1 {
+    font-size: 35px;
+}
+}
+
+.popbody{
+    text-align: center;
+    height: 50px;
+}
+
+.modal-header {
+    height: 30px;
+    border-bottom: 0px solid #583c3c;
+}
+
+.modal-footer {
+    border-top: 0px solid #583c3c;
+}
+
+.modal-content{
+    background:#71de07;
+    color:white;
+    font-size: 1.3em;
+    font-family: Montserrat,Arial,sans-serif;
+    height: 170px;
+
+}
