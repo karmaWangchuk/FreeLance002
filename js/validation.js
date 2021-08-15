@@ -5,10 +5,11 @@ function validateD(){
     return  /^([\w]{3,})+\s+([\w\s]{3,})+$/i.test( value );
   }, '');
 
-  // jQuery.validator.addMethod("phoneGR", function(value, element) {
-  //   // allow any non-whitespace characters as the host part
-  //   return /^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.]\d{3}[\s.]\d{4}$/.test( value );
-  // }, '');
+  jQuery.validator.addMethod("phoneGR", function(value, element) {
+    // allow any non-whitespace characters as the host part
+    return /^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]\d{3}[\s.-]\d{4}$/.test( value );
+  }, '');
+
   jQuery.validator.addMethod("mailGR", function(value, element) {
     var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
     // allow any non-whitespace characters as the host part
@@ -49,9 +50,8 @@ function validateD(){
             },
             phone: {    
               required: true,
-              // phoneGR: true,
-              minlength: 10,
-              maxlength: 10
+              phoneGR: true,
+              minlength: 1,
             },
         },
   

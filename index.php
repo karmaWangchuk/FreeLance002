@@ -49,7 +49,7 @@
               </div>
               <div class="form-group">
                 <label for="phone">Phone Number</label>
-                <input type="phone" class="form-control" name="phone" id="" placeholder="">
+                <input type="phone" class="form-control" name="phone" id="no" placeholder="" oninput= "format();">
               </div>
               <div class="form-group">
                 <label for="email">Email</label>
@@ -119,6 +119,21 @@
   $('#myModal').on('shown.bs.modal', function () {
     $('#myInput').trigger('focus')
   })
+  
+  function format(){
+
+    var number = $("#no").val()
+
+    if(number.length == 3 || number.length == 7) {
+
+      number = number+'-'
+
+    }
+
+    $("#no").val(number)
+
+    
+  }
 
   function resetData(){
 

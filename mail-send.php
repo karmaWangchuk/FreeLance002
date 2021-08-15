@@ -29,7 +29,7 @@ if(isset($_POST)) {
     $mail->Username   = 'server@pickphenom.com';                     //SMTP username
     $mail->Password   = 'Picksnow2420!';                               //SMTP password
     $mail->SMTPSecure = 'tls';            //Enable implicit TLS encryption
-    $mail->Port       = '26';                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
+    $mail->Port       = '587';                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
     
     //Recipients
     $mail->setFrom("server@pickphenom.com", "Server");
