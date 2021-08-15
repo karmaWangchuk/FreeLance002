@@ -127,10 +127,8 @@
     if(number.length == 3 || number.length == 7) {
 
       number = number+'-'
-
+      $("#no").val(number)
     }
-
-    $("#no").val(number)
 
     
   }

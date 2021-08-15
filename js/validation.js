@@ -7,7 +7,7 @@ function validateD(){
 
   jQuery.validator.addMethod("phoneGR", function(value, element) {
     // allow any non-whitespace characters as the host part
-    return /^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]\d{3}[\s.-]\d{4}$/.test( value );
+    return /^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]\d{3}[\s.-]\d{4}$/.test( value.trim() );
   }, '');
 
   jQuery.validator.addMethod("mailGR", function(value, element) {

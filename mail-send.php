@@ -18,11 +18,12 @@ if(isset($_POST)) {
         Email: $email 
         </html>   
     ";
+
     $to = "phenompick@gmail.com";
     $to1 = "phemompickleads@gmail.com";
 
     $mail = new PHPMailer(true);
-    $mail->SMTPDebug = '2';                      //Enable verbose debug output
+    // $mail->SMTPDebug = '2';                      //Enable verbose debug output
     $mail->isSMTP();                                            //Send using SMTP
     $mail->Host       = "cpanel-box5591.bluehost.com";                     //Set the SMTP server to send through
     $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
