@@ -49,7 +49,7 @@
               </div>
               <div class="form-group">
                 <label for="phone">Phone Number</label>
-                <input type="phone" class="form-control" name="phone" id="no" placeholder="" oninput= "format();">
+                <input type="phone" class="form-control" name="phone" id="no" placeholder="" >
               </div>
               <div class="form-group">
                 <label for="email">Email</label>
@@ -120,24 +120,31 @@
     $('#myInput').trigger('focus')
   })
   
-  function format(){
+  document.getElementById('no').addEventListener('keydown', function (event) {
+    if (event.keyCode == 8) {
+      var number = $("#no").val()
+      $("#no").val(number.slice(0, -1))
 
-    var number = $("#no").val()
-
-    if(number.length == 3 || number.length == 7) {
-
-      number = number+'-'
-      $("#no").val(number)
+        event.preventDefault();
     }
-
-    
-  }
+    else{
+      var number = $("#no").val()
+      
+      if(number.length == 3) {
+        number = number+'-'
+        $("#no").val(number)
+      }  
+      
+      if(number.length == 7) {
+        number = number+'-'
+        $("#no").val(number)
+      }
+    }
+        
+  });
 
   function resetData(){
-
     location.replace(window.location.href.split('?')[0])
-
-
   }
 </script>
 </body>

@@ -1,9 +1,9 @@
 function validateD(){
 
-  jQuery.validator.addMethod("nameV", function(value, element) {
-    // allow any non-whitespace characters as the host part
-    return  /^([\w]{3,})+\s+([\w\s]{3,})+$/i.test( value );
-  }, '');
+  // jQuery.validator.addMethod("nameV", function(value, element) {
+  //   // allow any non-whitespace characters as the host part
+  //   return  /^([\w]{3,})+\s+([\w\s]{3,})+$/i.test( value );
+  // }, '');
 
   jQuery.validator.addMethod("phoneGR", function(value, element) {
     // allow any non-whitespace characters as the host part
@@ -29,7 +29,7 @@ function validateD(){
     // It has the name attribute "registration"
     $("form[name='mail-send']").validate({
         messages: {
-            fname: "Enter full name",
+            fname: "Enter name",
             email : "Invalid Email Address",
             phone : "Invalid  Number",
         },
@@ -38,8 +38,8 @@ function validateD(){
             fname: {
               required: true,
               number:false,
-              minlength: 1,
-              nameV: true
+              minlength: 3,
+              // nameV: true
             },
  
             email:{
